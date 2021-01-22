@@ -1,0 +1,24 @@
+[10:31:24:815] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:79) - [32abdfb7-16f7-4504-be6b-671721adbb1c]请求：{"serviceId":"base","action":"test"}
+[10:31:24:854] [INFO] - com.wysoft.https_base.service.HttpService.service(HttpService.java:44) - 请求IP：192.168.0.110
+[10:31:24:857] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:124) - 服务耗时：44 ms.
+[10:31:24:858] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:139) - [32abdfb7-16f7-4504-be6b-671721adbb1c]响应：{"code":200,"msg":"调用成功！","data":{"date":"2020-11-26 10:31:24"},"time":"44 ms"}
+[10:34:33:101] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:79) - [021e4dda-f4ce-4067-8d80-dd6dd6ecf2fa]请求：{"serviceId":"base","action":"test"}
+[10:34:33:103] [INFO] - com.wysoft.https_base.service.HttpService.service(HttpService.java:44) - 请求IP：192.168.0.110
+[10:34:33:104] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:124) - 服务耗时：3 ms.
+[10:34:33:105] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:139) - [021e4dda-f4ce-4067-8d80-dd6dd6ecf2fa]响应：{"code":200,"msg":"调用成功！","data":{"date":"2020-11-26 10:34:33"},"time":"3 ms"}
+[10:35:24:783] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:79) - [c745b3f3-881b-474d-831f-3a491318aad3]请求：{"serviceId":"base","action":"test"}
+[10:35:24:784] [INFO] - com.wysoft.https_base.service.HttpService.service(HttpService.java:44) - 请求IP：192.168.0.110
+[10:35:24:785] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:124) - 服务耗时：2 ms.
+[10:35:24:786] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:139) - [c745b3f3-881b-474d-831f-3a491318aad3]响应：{"code":200,"msg":"调用成功！","data":{"date":"2020-11-26 10:35:24"},"time":"2 ms"}
+[10:36:52:755] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:79) - [e703c095-6731-4954-b43f-bfe31e9da413]请求：{"serviceId":"base","action":"test"}
+[10:36:52:756] [INFO] - com.wysoft.https_base.service.HttpService.service(HttpService.java:44) - 请求IP：192.168.0.110
+[10:36:52:761] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:124) - 服务耗时：7 ms.
+[10:36:52:762] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:139) - [e703c095-6731-4954-b43f-bfe31e9da413]响应：{"code":200,"msg":"调用成功！","data":{"date":"2020-11-26 10:36:52"},"time":"7 ms"}
+[10:54:06:470] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:79) - [16b814fb-7455-4823-a761-4301e347f2fb]请求：{"serviceId":"base","action":"test"}
+[10:54:06:479] [INFO] - com.wysoft.https_base.service.HttpService.service(HttpService.java:44) - 请求IP：192.168.0.110
+[10:54:06:481] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:124) - 服务耗时：11 ms.
+[10:54:06:482] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:139) - [16b814fb-7455-4823-a761-4301e347f2fb]响应：{"code":200,"msg":"调用成功！","data":{"date":"2020-11-26 10:54:06"},"time":"11 ms"}
+[11:15:20:822] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:79) - [7453923f-b394-483e-bd78-8b21e9df47a8]请求：{"serviceId":"base","action":"test"}
+[11:15:20:822] [INFO] - com.wysoft.https_base.service.HttpService.service(HttpService.java:44) - 请求IP：192.168.0.110
+[11:15:20:823] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:124) - 服务耗时：2 ms.
+[11:15:20:824] [INFO] - com.wysoft.https_base.controller.HttpsController.HttpServiceEntry(HttpsController.java:139) - [7453923f-b394-483e-bd78-8b21e9df47a8]响应：{"code":200,"msg":"调用成功！","data":{"date":"2020-11-26 11:15:20"},"time":"2 ms"}
