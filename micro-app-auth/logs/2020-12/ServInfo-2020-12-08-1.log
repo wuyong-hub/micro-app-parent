@@ -1,0 +1,23 @@
+[18:02:53:451] [INFO] - com.wysoft.https_auth.shiro.ShiroConfig.authRealm(ShiroConfig.java:30) - ====ShiroRealm注册完成=====
+[18:02:58:307] [INFO] - com.wysoft.https_auth.shiro.ShiroConfig.securityManager(ShiroConfig.java:44) - ====securityManager注册完成====
+[18:02:58:353] [INFO] - com.wysoft.https_auth.shiro.ShiroConfig.shiroFilter(ShiroConfig.java:124) - ====shiroFilterFactoryBean注册完成====
+[18:02:59:687] [INFO] - com.wysoft.https_base.configuration.ZookeeperConfig.zkClient(ZookeeperConfig.java:37) - 【初始化ZooKeeper连接状态....】=CONNECTED
+[18:03:01:908] [INFO] - com.wysoft.https_base.listener.ApplicationListenerPostProcessor.onContextRefreshedEvent(ApplicationListenerPostProcessor.java:52) - 容器加载完成，执行后处理方法...
+[18:03:01:918] [INFO] - com.wysoft.https_base.annotation.RemoteServiceAnnotationProcessor.registerService(RemoteServiceAnnotationProcessor.java:131) - 注册分布式服务:[aiService]
+[18:03:01:987] [INFO] - com.wysoft.https_base.annotation.RemoteServiceAnnotationProcessor.registerService(RemoteServiceAnnotationProcessor.java:153) - 已创建服务节点[/remoteServices/aiService/speechSynthesis:https://139.155.88.126:8443/httpServiceEntry]
+[18:03:01:988] [INFO] - com.wysoft.https_base.annotation.RemoteServiceAnnotationProcessor.registerService(RemoteServiceAnnotationProcessor.java:131) - 注册分布式服务:[userAuth]
+[18:03:01:993] [INFO] - com.wysoft.https_base.annotation.RemoteServiceAnnotationProcessor.registerService(RemoteServiceAnnotationProcessor.java:153) - 已创建服务节点[/remoteServices/userAuth/register:https://139.155.88.126:8443/httpServiceEntry]
+[18:03:01:997] [INFO] - com.wysoft.https_base.annotation.RemoteServiceAnnotationProcessor.registerService(RemoteServiceAnnotationProcessor.java:153) - 已创建服务节点[/remoteServices/userAuth/doAction:https://139.155.88.126:8443/httpServiceEntry]
+[18:03:02:000] [INFO] - com.wysoft.https_base.annotation.RemoteServiceAnnotationProcessor.registerService(RemoteServiceAnnotationProcessor.java:153) - 已创建服务节点[/remoteServices/userAuth/setAuthLogin:https://139.155.88.126:8443/httpServiceEntry]
+[18:03:02:005] [INFO] - com.wysoft.https_base.annotation.RemoteServiceAnnotationProcessor.registerService(RemoteServiceAnnotationProcessor.java:153) - 已创建服务节点[/remoteServices/userAuth/shiroLogin:https://139.155.88.126:8443/httpServiceEntry]
+[18:03:02:067] [INFO] - com.wysoft.https_base.annotation.RemoteServiceAnnotationProcessor.registerService(RemoteServiceAnnotationProcessor.java:131) - 注册分布式服务:[base]
+[18:03:02:072] [INFO] - com.wysoft.https_base.annotation.RemoteServiceAnnotationProcessor.registerService(RemoteServiceAnnotationProcessor.java:153) - 已创建服务节点[/remoteServices/base/help:https://139.155.88.126:8443/httpServiceEntry]
+[18:03:02:075] [INFO] - com.wysoft.https_base.annotation.RemoteServiceAnnotationProcessor.registerService(RemoteServiceAnnotationProcessor.java:153) - 已创建服务节点[/remoteServices/base/test:https://139.155.88.126:8443/httpServiceEntry]
+[18:03:02:078] [INFO] - com.wysoft.https_base.annotation.RemoteServiceAnnotationProcessor.registerService(RemoteServiceAnnotationProcessor.java:153) - 已创建服务节点[/remoteServices/base/doAction:https://139.155.88.126:8443/httpServiceEntry]
+[18:03:02:171] [INFO] - com.wysoft.https_base.listener.ApplicationListenerPostProcessor.onApplicationEvent(ApplicationListenerPostProcessor.java:40) - ApplicationStartedEvent 事件已发生！
+[18:03:02:174] [INFO] - com.wysoft.https_base.listener.ApplicationListenerPostProcessor.onApplicationEvent(ApplicationListenerPostProcessor.java:42) - ApplicationReadyEvent 事件已发生！
+[18:05:02:779] [INFO] - com.wysoft.https_auth.controller.PageController.httpAuth(PageController.java:125) - [5107c6d9-69a7-49ca-af0b-084d7c57c20f]请求：{"username":"wuy","password":"123","message":{"serviceId":"aiService","action":"speechSynthesis","content":"Hi,guys!"}}
+[18:05:03:384] [INFO] - com.wysoft.https_auth.controller.PageController.httpAuth(PageController.java:170) - 服务耗时：616 ms.
+[18:05:03:385] [INFO] - com.wysoft.https_auth.controller.PageController.httpAuth(PageController.java:185) - [5107c6d9-69a7-49ca-af0b-084d7c57c20f]响应：{"code":200,"msg":"调用成功！","data":{"token":"45ca3b58-7378-4bb4-82ed-015a292bf45c","user":{"gender":"","organizecode":"","password":"202cb962ac59075b964b07152d234b70","personname":"","roles":[],"status":"0","userid":2,"username":"wuy"}},"time":"616 ms"}
+[18:05:37:232] [INFO] - com.wysoft.https_base.controller.HttpsController.messageServiceEntry(HttpsController.java:202) - RECV MSG: [2d3a89f8-1430-49fe-b769-89e06a2cf8f4]{"topic": "test","message":{"serviceId":"aiService","action":"speechSynthesis","content":"Hi,guys!"}}
+[18:05:37:335] [INFO] - com.wysoft.https_base.kafka.MessageProcessor.doMessage(MessageProcessor.java:29) - 接收消息:null
