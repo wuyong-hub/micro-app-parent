@@ -1,13 +1,13 @@
-package com.wysoft.https_auth.configuration;
+package com.auth.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import com.wysoft.https_auth.interceptor.UserAuthInterceptor;
+import com.auth.interceptor.UserAuthInterceptor;
 
-//@Configuration
+@Configuration
 public class UserAuthConfiguration implements WebMvcConfigurer{
 
 	@Override

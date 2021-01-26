@@ -1,4 +1,4 @@
-package com.wysoft.https_base.kafka;
+package com.kafka.message;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;

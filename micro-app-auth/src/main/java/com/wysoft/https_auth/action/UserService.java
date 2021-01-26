@@ -12,7 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.wysoft.https_auth.dao.AuthLoginDao;
+import com.wysoft.https_auth.dao.SigninUserDao;
 import com.wysoft.https_auth.dao.UserDao;
+import com.wysoft.https_auth.model.SigninUser;
 import com.wysoft.https_auth.model.UaamAuthLogin;
 import com.wysoft.https_auth.model.UaamUser;
 import com.wysoft.https_base.action.BaseService;
@@ -26,6 +28,9 @@ import net.sf.json.JSONObject;
 public class UserService extends BaseService {
 	@Autowired
 	private UserDao userDao;
+	
+	@Autowired
+	private SigninUserDao signinUserDao;
 	
 	@Autowired
 	private AuthLoginDao authLoginDao;
@@ -168,5 +173,27 @@ public class UserService extends BaseService {
             result = JSONUtil.getErrMsg("用户名或密码错误！");
         	return result;
         }
+	}
+	
+	/**
+	 * 微信签到处理.
+	 */
+	@RemoteMethod
+	public JSONObject wx_signIn(JSONObject json) {
+		String username = JSONUtil.getString(json, "username");
+		String imageurl = JSONUtil.getString(json, "imageurl");
+		SigninUser user = signinUserDao.findByUsername(username);
+		if (user != null) {
+			return JSONUtil.getErrMsg("用户已存在！");
+		}
+		
+		user = new SigninUser();
+		user.setUsername(username);
+		user.setImageurl(imageurl);
+		
+		user = signinUserDao.save(user);
+		JSONObject result = JSONUtil.getResult();
+		result.put("data", user);
+		return result;
 	}
 }

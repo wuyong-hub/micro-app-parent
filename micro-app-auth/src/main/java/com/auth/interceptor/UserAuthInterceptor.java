@@ -1,4 +1,4 @@
-package com.wysoft.https_auth.interceptor;
+package com.auth.interceptor;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.wysoft.https_auth.shiro;
+package com.shiro;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.wysoft.https_auth.shiro;
+package com.shiro;
 
 import org.apache.shiro.web.servlet.ShiroHttpServletRequest;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;

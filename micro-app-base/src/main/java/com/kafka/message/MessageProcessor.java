@@ -1,4 +1,4 @@
-package com.wysoft.https_base.kafka;
+package com.kafka.message;
 
 import java.util.Optional;
 
